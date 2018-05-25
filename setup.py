@@ -11,7 +11,7 @@ VERSION_RE = re.compile(r'''__version__ = ['"]([0-9.]+)['"]''')
 
 
 requires = [
-    'botocore>=1.3.0,<2.0.0',
+    'botocore-fork>=1.3.0,<2.0.0',
 ]
 
 
@@ -27,7 +27,7 @@ def get_version():
 
 
 setup(
-    name='s3transfer',
+    name='s3transfer-fork',
     version=get_version(),
     description='An Amazon S3 Transfer Manager',
     long_description=open('README.rst').read(),
